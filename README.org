@@ -16,10 +16,12 @@ taken down from the Internet).
 ** Dependencies
 :PROPERTIES:
 :CREATED:  [2023-05-24 Wed 16:42]
+:ID:       427688bd-338c-48a0-975a-d23acb464c7b
 :END:
 
 - org-webtools
 - dash.el
+- s.el
 
 ** Thanks
 :PROPERTIES:
