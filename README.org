@@ -19,9 +19,9 @@ taken down from the Internet).
 :ID:       427688bd-338c-48a0-975a-d23acb464c7b
 :END:
 
-- org-webtools
-- dash.el
-- s.el
+- [[https://github.com/alphapapa/org-web-tools][org-web-tools]]
+- [[https://github.com/magnars/dash.el][dash.el]]
+- [[https://github.com/magnars/s.el][s.el]]
 
 ** Thanks
 :PROPERTIES:
@@ -30,5 +30,5 @@ taken down from the Internet).
 :END:
 
 Thanks to Sławomir who asked me to publish this during one of our
-EmacsBuddy interactions: it would have probably staid in my private
+[[https://github.com/ag91/emacs-buddy][EmacsBuddy]] interactions: it would have probably staid in my private
 configuration otherwise.
