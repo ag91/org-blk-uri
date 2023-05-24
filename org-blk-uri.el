@@ -9,17 +9,17 @@
        (--find (s-match (car it) extension) it)
        cdr
        symbol-name
-       (s-replace "-mode" "" it))
+       (s-replace "-mode" "" it)))
 
-  (defun org-blk-uri-file-to-org-block-string (filepath)
-    "Make a Org src block string from FILEPATH."
-    (let* ((extension (file-name-extension filepath))
-           (contents (with-temp-buffer
-                       (insert-file-contents filepath)
-                       (when (string= extension "org") (org-escape-code-in-region (point-min) (point-max)))
-                       (buffer-string)))
-           (babel-id (org-blk-uri-ext-to-babel-id (concat "." extension))))
-      (concat "#+begin_src " (if babel-id babel-id extension) " :tangle " filepath "\n"  (my/s-indent contents 2) "\n" "#+end_src")))
+(defun org-blk-uri-file-to-org-block-string (filepath)
+  "Make a Org src block string from FILEPATH."
+  (let* ((extension (file-name-extension filepath))
+         (contents (with-temp-buffer
+                     (insert-file-contents filepath)
+                     (when (string= extension "org") (org-escape-code-in-region (point-min) (point-max)))
+                     (buffer-string)))
+         (babel-id (org-blk-uri-ext-to-babel-id (concat "." extension))))
+    (concat "#+begin_src " (if babel-id babel-id extension) " :tangle " filepath "\n"  (my/s-indent contents 2) "\n" "#+end_src")))
 
 (defun org-blk-uri-org-src-from-filename (filepath)
   "Insert the org src block corresponding to FILEPATH."
