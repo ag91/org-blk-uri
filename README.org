@@ -1,10 +1,13 @@
 * Org Blk URI
 :PROPERTIES:
 :CREATED:  [2023-05-24 Wed 16:39]
+:ID:       2a41eeb6-774b-4d1e-a652-81bbf2e46be4
 :END:
 
 This module provides a way to extract file or web content into a Org
 Mode source block.
+
+[[file:example.gif]]
 
 An example of use is when you want to archive the version of a web
 page for your own record (e.g., a job ad you applied for and that gets
