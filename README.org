@@ -1,0 +1,29 @@
+* Org Blk URI
+:PROPERTIES:
+:CREATED:  [2023-05-24 Wed 16:39]
+:END:
+
+This module provides a way to extract file or web content into a Org
+Mode source block.
+
+An example of use is when you want to archive the version of a web
+page for your own record (e.g., a job ad you applied for and that gets
+taken down from the Internet).
+
+** Dependencies
+:PROPERTIES:
+:CREATED:  [2023-05-24 Wed 16:42]
+:END:
+
+- org-webtools
+- dash.el
+
+** Thanks
+:PROPERTIES:
+:CREATED:  [2023-05-24 Wed 16:43]
+:ID:       9a3cc013-fcfb-4960-b84b-034373248faa
+:END:
+
+Thanks to Sławomir who asked me to publish this during one of our
+EmacsBuddy interactions: it would have probably staid in my private
+configuration otherwise.
